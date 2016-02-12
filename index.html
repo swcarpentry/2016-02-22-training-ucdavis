@@ -57,14 +57,21 @@ prep-repository:  # optional (insert the URL for the repository where the traine
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
+  The workshop will be held in the Data Science Initiative classroom
+  on the second story of
+  the <a href="http://www.lib.ucdavis.edu/ul/libcoll/shields.php">Shields
+  Library</a>.  The room is on the top right of
+  the <a href="https://www.lib.ucdavis.edu/ul/about/locations/?map=shields-floor-3">third
+  floor map</a>. The Shields Library is located in the NE corner of
+  the UC Davis campus, fairly close to downtown and 1st Street (see
+  <a href="http://campusmap.ucdavis.edu/?b=114">here</a>).
+</p>
+<p>
+  You can get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
-</p>
-<p>
-  Please see <a href="http://dib-training.readthedocs.org/en/pub/DSI-space-directions.html">this page</a>
+  Please also see <a href="http://dib-training.readthedocs.org/en/pub/DSI-space-directions.html">this page</a>
   for directions to the space.  (It's not straightforward to find.)
 </p>
 {% endif %}
